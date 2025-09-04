@@ -1,11 +1,5 @@
 import express from "express";
-import {
-  loginUser,
-  logoutUser,
-  refreshAccessToken,
-  registerUser,
-  verifyUser,
-} from "../controller/user.controller.js";
+import {loginUser, logoutUser, refreshAccessToken, registerUser, verifyUser } from "../controller/user.controller.js";
 import { auth } from "../middleware/authMiddleware.js";
 import { createTask, deleteTask, getTask, getTasks, updateTask } from "../controller/task.controller.js";
 
